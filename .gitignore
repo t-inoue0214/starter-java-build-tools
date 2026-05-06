@@ -1,0 +1,25 @@
+# Java コンパイル出力
+*.class
+out/
+
+# 第1章: 手動ビルドの作業用ディレクトリと生成物
+meta/
+app.jar
+
+# Maven ビルド出力
+target/
+
+# 第3章: curl で手動ダウンロードした JAR の配置ディレクトリ
+chapter-03-maven-deps/lib/
+
+# 第5章: Maven ビルド出力（マルチモジュール子モジュール）
+chapter-05-maven-config/lib/target/
+chapter-05-maven-config/app/target/
+
+# Gradle ビルド出力
+.gradle/
+build/
+
+# IDE
+.idea/
+*.iml

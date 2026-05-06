@@ -1,0 +1,42 @@
+{
+    "name": "Java Build Tools Learning",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "features": {
+        "ghcr.io/devcontainers/features/node:2.0.0": {
+            "version": "20" 
+        },
+        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+            "version": "latest",
+            "installDockerCompose": "true"
+        }
+    },
+    "forwardPorts": [
+        8081
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "ms-azuretools.vscode-docker",
+                "ms-vscode.live-server"
+            ],
+            "settings": {
+                "files.encoding": "utf8",
+                "java.server.launchMode": "Standard",
+                "java.configuration.updateBuildConfiguration": "automatic",
+                "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/master/eclipse-java-google-style.xml",
+                "java.format.settings.profile": "GoogleStyle",
+                "java.jdt.ls.java.home": "/usr/lib/jvm/msopenjdk-current",
+                "editor.codeActionsOnSave": {
+                    "source.fixAll.markdownlint": "explicit"
+                },
+                "java.import.gradle.enabled": true,
+                "java.import.maven.enabled": true
+            }
+        }
+    },
+    "postCreateCommand": "npm install -g markdownlint-cli2 textlint textlint-rule-preset-ja-technical-writing textlint-rule-prh",
+    "remoteUser": "vscode"
+}
