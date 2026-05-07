@@ -38,6 +38,6 @@
             }
         }
     },
-    "postCreateCommand": "npm install -g markdownlint-cli2 textlint textlint-rule-preset-ja-technical-writing textlint-rule-prh",
+    // "postCreateCommand": "npm install -g markdownlint-cli2 textlint textlint-rule-preset-ja-technical-writing textlint-rule-prh",
     "remoteUser": "vscode"
 }
