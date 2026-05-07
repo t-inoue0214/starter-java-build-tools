@@ -5,7 +5,7 @@ USER root
 RUN rm -f /etc/apt/sources.list.d/yarn.list
 
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get install -y locales jq maven vim\
+    && apt-get install -y locales jq maven vim gradle\
     && sed -i -e 's/# ja_JP.UTF-8 UTF-8/ja_JP.UTF-8 UTF-8/' /etc/locale.gen \
     && locale-gen \
     && update-locale LANG=ja_JP.UTF-8

@@ -20,6 +20,14 @@ chapter-05-maven-config/app/target/
 .gradle/
 build/
 
+# 第7章: Gradle ビルド出力とキャッシュ
+chapter-07-gradle-intro/build/
+chapter-07-gradle-intro/.gradle/
+
+# 第8章: Gradle ビルド出力とキャッシュ
+chapter-08-gradle-plugins/build/
+chapter-08-gradle-plugins/.gradle/
+
 # IDE
 .idea/
 *.iml
